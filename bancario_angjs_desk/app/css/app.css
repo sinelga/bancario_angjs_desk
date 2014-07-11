@@ -1,0 +1,27 @@
+body {
+  /*background-color: #fff; */
+  /*background-color: red;*/
+ 
+  font-family: 'Finger Paint',cursive;
+  text-shadow: 1px 1px 1px #aaa;
+ /* color: blue;*/
+  margin: 10px;
+ /* font-size: 100%;*/
+  
+}
+
+.imgSmall200 {
+ /* float:left;*/
+  margin-left: 15px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 5px solid #888888;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  
+  }
+  
+  .leftPart {
+  
+  width: 25%;
+  
+  }
