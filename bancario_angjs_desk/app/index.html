@@ -28,6 +28,8 @@
 
 <body ng-controller="LoadCtrl">
 
+	<div ng-if="!clickOnRss">
+
 	<div ng-repeat="rs in rss" class='leftPart' ng-click='selectRss(rs)'>
 
 		<div class="media">
@@ -48,6 +50,23 @@
 		</div>
 
 	</div>
+	
+	</div>
+	
+	<div ng-if="clickOnRss">
+	
+	<button ng-click='closeItem()' type="button"  class="close pull-right" aria-hidden="true"><i class="fa fa-times-circle-o fa-lg"></i></button>
+	
+	<div class="page-header text-center">{{selectedItem.Title}}</div>
+	<img ng-src='{{selectedItem.ImgLink}}' alt="" class="img-rounded center-block imgBig468">
+      <div class="well">{{selectedItem.Cont}}</div>
+	
+	
+	
+	
+	</div>
+	
+	
 
 
 </body>
