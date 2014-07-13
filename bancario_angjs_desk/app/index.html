@@ -28,22 +28,28 @@
 
 <body ng-controller="LoadCtrl">
 
+<div class="row">
+
+<div class="col-md-8">
 	<div ng-if="!clickOnRss">
 
-	<div ng-repeat="rs in rss" class='leftPart' ng-click='selectRss(rs)'>
+		<div ng-repeat="rs in rss" class='leftPart' ng-click='selectRss(rs)'>
 
-		<div class="media">
+			<div class="media">
 
-			<img class="media-object imgSmall200 pull-left"
-				ng-src='http://146.185.151.26:8080/resize/200x200/{{rs.ImgLink}}'
-				alt="">
+				<img class="media-object imgSmall200 pull-left"
+					ng-src='http://146.185.151.26:8080/resize/200x200/{{rs.ImgLink}}'
+					alt="">
 
-			<div class="media-body">
-				{{rs.PubDate |date:'mediumDate'}}
-				<div class='title'>
-					{{rs.Title}} <i class="fa fa-chevron-circle-right fa-2x pull-right"></i>
+				<div class="media-body">
+					{{rs.PubDate |date:'mediumDate'}}
+					<div class='title'>
+						{{rs.Title}} <i
+							class="fa fa-chevron-circle-right fa-2x pull-right"></i>
+					</div>
+
+
 				</div>
-
 
 			</div>
 
@@ -51,22 +57,39 @@
 
 	</div>
 	
-	</div>
-	
+
 	<div ng-if="clickOnRss">
-	
-	<button ng-click='closeItem()' type="button"  class="close pull-right" aria-hidden="true"><i class="fa fa-times-circle-o fa-lg"></i></button>
-	
-	<div class="page-header text-center">{{selectedItem.Title}}</div>
-	<img ng-src='{{selectedItem.ImgLink}}' alt="" class="img-rounded center-block imgBig468">
-      <div class="well">{{selectedItem.Cont}}</div>
-	
-	
-	
+
+		<button ng-click='closeItem()' type="button" class="close pull-right"
+			aria-hidden="true">
+			<i class="fa fa-times-circle-o fa-lg"></i>
+		</button>
+
+		<div class="page-header text-center">{{selectedItem.Title}}</div>
+		<img ng-src='{{selectedItem.ImgLink}}' alt=""
+			class="img-rounded center-block imgBig468">
+		<div class="well">{{selectedItem.Cont}}</div>
+
+	</div>
 	
 	</div>
 	
 	
+	<div class="col-md-4 rightbox" >
+ 
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- skyscraper120x600FI_fifinance -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-4265026941264081"
+     data-ad-slot="9526732259"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+ 
+ </div>
+
+</div>
 
 
 </body>
