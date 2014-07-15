@@ -45,3 +45,11 @@ body {
 	top: 100px;
 	/*float: right;*/
 }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 50%;
+ 
+}
